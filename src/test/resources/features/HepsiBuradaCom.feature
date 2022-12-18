@@ -1,7 +1,7 @@
 Feature: Hepsiburada.com
 
-  Scenario: Hepsiburada.com sitesinde uye olmadan alisveris yapilir
-    Given "Edge" tarayıcısı açılır
+  Scenario Outline: Hepsiburada.com sitesinde uye olmadan alisveris yapilir
+    Given "<browser>" tarayıcısı açılır
     When Hepsiburada.com sitesi açılır
     Then Hepsiburada.com sitesinin açıldığı doğrulanır
     When Menüden Elektronik BilgisayarTablet Notebook seçilir
@@ -13,3 +13,9 @@ Feature: Hepsiburada.com
     Then Eklenen ürünün sepette olduğu doğrulanır
     When Alışverisi tamamla butonuna basılır
     Then Login ekranına yönlendirildiği kontrol edilir
+
+    Examples:
+      | browser |
+      | chrome  |
+      | firefox |
+      | edge    |
