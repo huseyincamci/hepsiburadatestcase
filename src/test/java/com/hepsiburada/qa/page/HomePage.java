@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
     By markalarFilter = By.cssSelector("#markalar [data-test-id='filterbox-content-children'] label div[class^='moria-Checkbox']");
     By sortingBox = By.cssSelector(".horizontalSortingBar-vJPnTMeyShn8REmw3_On [data-test-id='dropdown-container']");
     By sortingBarList = By.cssSelector("[class^='moria-Dropdown'] a label");
-    By productContainer = By.cssSelector(".moria-ProductCard-joawUM"); //[data-test-id='product-card-image-container']
+    By productContainer = By.cssSelector(".moria-ProductCard-joawUM");
     By productTitle = By.cssSelector("[data-test-id='product-card-name']");
     By addToCartBtn = By.cssSelector("[data-test-id='product-info-button']");
     By toastMessageText = By.cssSelector(".hb-toast-text");
