@@ -19,7 +19,6 @@ public class DriverFactory {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-web-security");
-        options.addArguments("--headless");
         options.addArguments("--disable-blink-features=AutomationControlled");
         options.setExperimentalOption("excludeSwitches",
                 Collections.singletonList("enable-automation"));
